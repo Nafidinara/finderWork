@@ -1,0 +1,39 @@
+{
+  "canisters": {
+    "finderWork_backend": {
+      "build": "npx azle finderWork_backend",
+      "candid": "src/finderWork_backend/finderWork_backend.did",
+      "gzip": true,
+      "main": "src/finderWork_backend/src/index.ts",
+      "tech_stack": {
+        "cdk": {
+          "azle": {}
+        },
+        "language": {
+          "javascript": {},
+          "typescript": {}
+        }
+      },
+      "type": "custom",
+      "wasm": ".azle/finderWork_backend/finderWork_backend.wasm"
+    },
+    "finderWork_frontend": {
+      "dependencies": [
+        "finderWork_backend"
+      ],
+      "source": [
+        "src/finderWork_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "finderWork_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
