@@ -1,0 +1,1 @@
+{"canister_methods":{"queries":[{"name":"getCurrentUser","composite":false},{"name":"indexJob","composite":false},{"name":"showJob","composite":false}],"updates":[{"name":"registerUser"},{"name":"loginUser"},{"name":"logOut"},{"name":"storeJob"},{"name":"updateJob"},{"name":"deleteJob"},{"name":"applyJob"}],"callbacks":{}}}
